@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MMTI PC Toolkit - Scripts de Manutenção para Windows</title>
+    <meta name="description" content="Coleção completa de scripts para manutenção, reparo e otimização de PCs Windows. Ferramentas profissionais para técnicos e usuários avançados.">
+    <meta name="keywords" content="windows, manutenção, scripts, reparo, otimização, pc, toolkit">
+    <meta name="author" content="marlonmotta - mm.ti Lab">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://marlonmotta.github.io/mmti-pc-toolkit/">
+    <meta property="og:title" content="MMTI PC Toolkit - Scripts de Manutenção para Windows">
+    <meta property="og:description" content="Coleção completa de scripts para manutenção, reparo e otimização de PCs Windows.">
+    <meta property="og:image" content="https://marlonmotta.github.io/mmti-pc-toolkit/assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://marlonmotta.github.io/mmti-pc-toolkit/">
+    <meta property="twitter:title" content="MMTI PC Toolkit - Scripts de Manutenção para Windows">
+    <meta property="twitter:description" content="Coleção completa de scripts para manutenção, reparo e otimização de PCs Windows.">
+    <meta property="twitter:image" content="https://marlonmotta.github.io/mmti-pc-toolkit/assets/og-image.png">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-tools"></i>
+                <h1>MMTI PC Toolkit</h1>
+            </div>
+            <nav class="nav">
+                <a href="#scripts" class="nav-link">Scripts</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#contribute" class="nav-link">Contribuir</a>
+                <a href="https://github.com/marlonmotta/mmti-pc-toolkit" target="_blank" class="nav-link">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Scripts Profissionais para Manutenção de PC</h2>
+                <p>Coleção completa de ferramentas para reparo, otimização e manutenção de sistemas Windows. Desenvolvido por técnicos, para técnicos.</p>
+                <div class="hero-buttons">
+                    <a href="#scripts" class="btn btn-primary">
+                        <i class="fas fa-download"></i> Ver Scripts
+                    </a>
+                    <a href="https://github.com/marlonmotta/mmti-pc-toolkit" target="_blank" class="btn btn-secondary">
+                        <i class="fab fa-github"></i> Ver Código
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search and Filter -->
+    <section class="search-section">
+        <div class="container">
+            <div class="search-box">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar scripts por nome, categoria ou descrição...">
+                <button id="clearSearch" class="clear-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="repair">Reparo</button>
+                <button class="filter-btn" data-category="maintenance">Manutenção</button>
+                <button class="filter-btn" data-category="optimization">Otimização</button>
+                <button class="filter-btn" data-category="diagnostics">Diagnósticos</button>
+                <button class="filter-btn" data-category="security">Segurança</button>
+                <button class="filter-btn" data-category="automation">Automação</button>
+                <button class="filter-btn" data-category="network">Rede</button>
+                <button class="filter-btn" data-category="specialized">Especializado</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scripts Table -->
+    <section id="scripts" class="scripts-section">
+        <div class="container">
+            <h2>Scripts Disponíveis</h2>
+            <div class="table-container">
+                <table class="scripts-table">
+                    <thead>
+                        <tr>
+                            <th>Script</th>
+                            <th>Categoria</th>
+                            <th>Descrição</th>
+                            <th>Comando</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="scriptsTableBody">
+                        <!-- Scripts serão inseridos dinamicamente -->
+                    </tbody>
+                </table>
+            </div>
+            <div id="noResults" class="no-results" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>Nenhum script encontrado</h3>
+                <p>Tente ajustar os filtros ou termos de busca.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>Sobre o MMTI PC Toolkit</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>O <strong>MMTI PC Toolkit</strong> é uma coleção abrangente de scripts para manutenção, reparo e otimização de sistemas Windows. Desenvolvido com foco na praticidade e eficiência, oferece ferramentas profissionais para técnicos e usuários avançados.</p>
+                    
+                    <h3>Características Principais:</h3>
+                    <ul>
+                        <li><i class="fas fa-check"></i> <strong>Modular:</strong> Scripts organizados por categoria e função</li>
+                        <li><i class="fas fa-check"></i> <strong>Seguro:</strong> Validações e verificações de segurança integradas</li>
+                        <li><i class="fas fa-check"></i> <strong>Profissional:</strong> Código limpo e bem documentado</li>
+                        <li><i class="fas fa-check"></i> <strong>Open Source:</strong> Licenciado sob GPL-3.0</li>
+                        <li><i class="fas fa-check"></i> <strong>Multi-plataforma:</strong> Suporte atual para Windows, Linux em desenvolvimento</li>
+                    </ul>
+
+                    <h3>Desenvolvido por:</h3>
+                    <p><strong>marlonmotta</strong> - mm.ti Lab<br>
+                    <a href="mailto:marlonmotta.ti@gmail.com">marlonmotta.ti@gmail.com</a></p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <i class="fas fa-code"></i>
+                        <h3>8</h3>
+                        <p>Módulos</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-file-code"></i>
+                        <h3>50+</h3>
+                        <p>Scripts</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-users"></i>
+                        <h3>Open</h3>
+                        <p>Source</p>
+                    </div>
+                    <div class="stat-card">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>GPL-3.0</h3>
+                        <p>Licença</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contribute Section -->
+    <section id="contribute" class="contribute-section">
+        <div class="container">
+            <h2>Contribua com o Projeto</h2>
+            <div class="contribute-content">
+                <div class="contribute-text">
+                    <p>O MMTI PC Toolkit é um projeto open source e sempre estamos abertos a contribuições da comunidade!</p>
+                    
+                    <h3>Como Contribuir:</h3>
+                    <ul>
+                        <li><i class="fas fa-bug"></i> <strong>Reportar Bugs:</strong> Encontrou um problema? Abra uma issue no GitHub</li>
+                        <li><i class="fas fa-lightbulb"></i> <strong>Sugerir Melhorias:</strong> Tem uma ideia? Compartilhe conosco</li>
+                        <li><i class="fas fa-code"></i> <strong>Desenvolver:</strong> Contribua com código e melhorias</li>
+                        <li><i class="fas fa-book"></i> <strong>Documentar:</strong> Ajude a melhorar a documentação</li>
+                    </ul>
+
+                    <div class="contribute-buttons">
+                        <a href="https://github.com/marlonmotta/mmti-pc-toolkit/issues" target="_blank" class="btn btn-primary">
+                            <i class="fas fa-exclamation-circle"></i> Reportar Bug
+                        </a>
+                        <a href="https://github.com/marlonmotta/mmti-pc-toolkit/pulls" target="_blank" class="btn btn-secondary">
+                            <i class="fas fa-code-branch"></i> Fazer Pull Request
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>MMTI PC Toolkit</h3>
+                    <p>Scripts profissionais para manutenção de PC</p>
+                    <div class="social-links">
+                        <a href="https://github.com/marlonmotta" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="mailto:marlonmotta.ti@gmail.com">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="https://github.com/marlonmotta/mmti-pc-toolkit">GitHub</a></li>
+                        <li><a href="https://github.com/marlonmotta/mmti-pc-toolkit/blob/main/README.md">Documentação</a></li>
+                        <li><a href="https://github.com/marlonmotta/mmti-pc-toolkit/issues">Issues</a></li>
+                        <li><a href="https://github.com/marlonmotta/mmti-pc-toolkit/blob/main/CONTRIBUTING.md">Contribuir</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Licença</h4>
+                    <p>Este projeto está licenciado sob a <a href="https://www.gnu.org/licenses/gpl-3.0.html" target="_blank">GPL-3.0</a></p>
+                    <p>&copy; 2025 marlonmotta - mm.ti Lab</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Desenvolvido com <i class="fas fa-heart"></i> por <strong>marlonmotta</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Comando copiado para a área de transferência!</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
