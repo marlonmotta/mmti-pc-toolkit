@@ -1,0 +1,108 @@
+# Logs
+*.log
+logs/
+C:/mmti-toolkit-logs/
+
+# Backups
+*.bak
+*.backup
+
+# Temp files
+*.tmp
+temp/
+~$*
+
+# OS generated
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Windows
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Personal notes (não commitar)
+NOTES.md
+TODO-PERSONAL.md
+*.private.md
+
+# Test files
+test-output/
+*.test.log
+
+# Sensitive data
+*.key
+*.pem
+*.p12
+config.local.*
+secrets/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+dist/
+build/
+
+# Node modules (se usar no futuro)
+node_modules/
+npm-debug.log*
+
+# Python (se usar no futuro)
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+ENV/
+
+# Compiled source
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Database
+*.sql
+*.sqlite
+*.db
+
