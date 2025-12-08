@@ -51,20 +51,21 @@ Este projeto é a **evolução** do [mmti-windows-repair](https://github.com/mar
 ## 📂 Módulos Disponíveis
 
 ### 🔧 01. Repair (Reparos do Sistema)
-**Scripts:** 4 | **Status:** ✅ Completo
+**Scripts:** 6 | **Status:** ✅ Completo
 
-- `repair-lite` - Reparo rápido (SFC + DISM)
-- `repair-full` - Reparo completo do sistema
-- `repair-network` - Reset completo de configurações de rede
-- `repair-store` - Reparo do Windows Store e apps UWP
+- `WINrepair-lite.ps1` / `WINrepair-lite.bat` - Reparo rápido (SFC + DISM)
+- `WINrepair-full.ps1` / `WINrepair-full.bat` - Reparo completo do sistema
+- `repair-network.ps1` - Reset completo de configurações de rede
+- `repair-store.ps1` - Reparo do Windows Store e apps UWP
+- `auto-enter-helper.vbs` - Sistema anti-travamento para DISM
 
 ### 🧹 02. Maintenance (Manutenção e Limpeza)
 **Scripts:** 4 | **Status:** ✅ Completo
 
-- `clean-system` - Limpeza profunda do sistema
-- `clean-temp` - Limpeza rápida de temporários
-- `clean-updates` - Remove atualizações antigas do Windows
-- `optimize-disk` - Otimização inteligente HDD/SSD
+- `clean-system.ps1` - Limpeza profunda do sistema (temporários, cache navegadores, prefetch, logs)
+- `clean-temp.ps1` - Limpeza rápida de temporários e lixeira
+- `clean-updates.ps1` - Remove atualizações antigas do Windows (libera 5-10 GB)
+- `optimize-disk.ps1` - Otimização inteligente HDD/SSD (detecção automática)
 
 ### ⚡ 03. Optimization (Otimização de Performance)
 **Status:** 🚧 Em desenvolvimento
@@ -117,7 +118,7 @@ cd mmti-pc-toolkit
 cd caminho\para\mmti-pc-toolkit\windows
 
 # Execute o script desejado
-.\01-repair\repair-lite.ps1
+.\windows\01-repair\WINrepair-lite.ps1
 ```
 
 **Batch:**
@@ -164,7 +165,7 @@ Reparo completo do sistema Windows com DISM, SFC e CHKDSK
 
 **Uso:**
 ```powershell
-.\windows\01-repair\repair-full.ps1
+.\windows\01-repair\WINrepair-full.ps1
 ```
 
 ### 🧹 System Cleanup

@@ -2,14 +2,14 @@
 
 > Scripts para reparar problemas do Windows
 
-**Status:** ✅ Completo (5 scripts)
+**Status:** ✅ Completo (6 scripts)
 
 ---
 
 ## 📋 Scripts Disponíveis
 
 ### 1. Repair Lite
-**Arquivos:** `repair-lite.bat` | `repair-lite.ps1`
+**Arquivos:** `WINrepair-lite.bat` | `WINrepair-lite.ps1`
 
 **O que faz:**
 - Verificação DISM CheckHealth
@@ -21,13 +21,13 @@
 
 **Como usar:**
 ```powershell
-.\repair-lite.ps1
+.\WINrepair-lite.ps1
 ```
 
 ---
 
 ### 2. Repair Full
-**Arquivos:** `repair-full.bat` | `repair-full.ps1`
+**Arquivos:** `WINrepair-full.bat` | `WINrepair-full.ps1`
 
 **O que faz:**
 - Tudo do Repair Lite +
@@ -40,12 +40,50 @@
 
 **Como usar:**
 ```powershell
-.\repair-full.ps1
+.\WINrepair-full.ps1
 ```
 
 ---
 
-### 3. Auto-Enter Helper
+### 3. Repair Network
+**Arquivo:** `repair-network.ps1`
+
+**O que faz:**
+- Reset do stack TCP/IP
+- Reset do stack Winsock
+- Reset de configurações DNS (IPv4 e IPv6)
+- Reset de adaptadores de rede
+- Limpeza de cache DNS
+
+**Tempo:** 2-5 minutos
+
+**Como usar:**
+```powershell
+.\repair-network.ps1
+```
+
+---
+
+### 4. Repair Store
+**Arquivo:** `repair-store.ps1`
+
+**O que faz:**
+- Para e reinicia serviços do Windows Store
+- Limpa cache do Windows Store
+- Reseta aplicativos UWP
+- Reinstala Windows Store
+- Corrige problemas com apps UWP
+
+**Tempo:** 5-10 minutos
+
+**Como usar:**
+```powershell
+.\repair-store.ps1
+```
+
+---
+
+### 5. Auto-Enter Helper
 **Arquivo:** `auto-enter-helper.vbs`
 
 **O que faz:**
@@ -65,10 +103,10 @@
 cd caminho\para\mmti-pc-toolkit\windows\01-repair
 
 # Reparo rápido
-.\repair-lite.ps1
+.\WINrepair-lite.ps1
 
 # Reparo completo
-.\repair-full.ps1
+.\WINrepair-full.ps1
 ```
 
 ### Batch

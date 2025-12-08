@@ -74,6 +74,20 @@ Este projeto é a evolução do [mmti-windows-repair](https://github.com/marlonm
 
 ## [Unreleased]
 
+### Adicionado (2025-01-XX)
+
+**Correções:**
+- ✅ Corrigido encoding UTF-8 com BOM em todos os scripts PowerShell
+- ✅ Corrigidos blocos catch para usar `$($_.Exception.Message)` corretamente
+- ✅ Atualizado `WINrepair-full.ps1` com versão corrigida
+
+**Módulo 02: Maintenance - Concluído:**
+- ✅ `clean-system.ps1` - Implementado com limpeza completa
+- ✅ `clean-temp.ps1` - Implementado com limpeza rápida
+- ✅ `clean-updates.ps1` - Implementado com DISM Component Cleanup
+- ✅ `optimize-disk.ps1` - Implementado com detecção automática HDD/SSD
+- ✅ README do módulo 02 atualizado com documentação completa
+
 ### Planejado para v0.2.0
 
 **Módulo 03: Optimization**
